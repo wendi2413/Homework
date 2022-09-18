@@ -1,0 +1,70 @@
+<form action=" /tutorial/action.html">
+    <fieldset>
+        <legend>Travel Reservation Form</legend>
+        <h5> * denotes mandatory</h5>
+        <div>
+            <label>
+                Full name*<br/>  
+                <input type="text" name="full name" value="" placeholder="FirstName LastName">
+            </label>
+        </div><br>
+        <div>
+            <label>
+                Email address*<br/> 
+                <input type="email" name="email address" value="" placeholder="xxx@gmail.com">
+            </label>  
+        </div><br>
+        <div>
+            <label>
+                Select Tour Package*<br/> 
+                <select>
+                    <option value="">-- Select Tour Package --</option>
+                    <optgroup label="Europe">
+                        <option value="france">France</option>
+                        <option value="germany">Germany</option>
+                        <option value="italy">Italy</option>
+                    </optgroup>
+                    <optgroup label="America">
+                        <option value="canada">Canada</option>
+                        <option value="united states">United Sates</option>
+                        <option value="argentina">Argentina</option>
+                    </optgroup>
+                </select>
+            </label>
+        </div><br>
+        <div>
+            <label>
+                Arrival Date*<br/> 
+                <input type="date" name="arrival date" value="" placeholder="">
+            </label>
+        </div><br>
+        <div>
+            <label>
+                Number of persons*<br/> 
+                <input type="number" name="number of persons" value="" placeholder="">
+            </label>
+        </div><br>
+        <div>
+            <label>
+                What would you want to avail?*<br/> 
+                <input type="checkbox" name="boarding-name" value="boarding">Boating<br/>
+                <input type="checkbox" name="fooding-name" value="fooding">Fooding<br/>
+                <input type="checkbox" name="sight seeing-name" value="sight seeing">Sight Seeing<br/>
+            </label>
+        </div><br>
+        <div>
+            <label>
+                Discount Coupon Code<br/>
+                <input type="text" name="discount coupon code" value="" placeholder="xxx xxx">
+            </label>
+        </div><br>
+        <div>
+           <label>
+                Terms and Conditions*<br/> 
+                <input type="radio" name="agreement" value="i agree">I agree<br/>
+                <input type="radio" name="agreement" value="i disagree">I disagree<br/>
+           </label> 
+        </div><br>
+        <button type="submit">Complete reservation</button>
+    </fieldset>
+</form>
