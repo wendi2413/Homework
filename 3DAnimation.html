@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+    @keyframes spinner{
+        from{
+            -moz-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+        }
+        to{
+            -moz-transform: rotateY(-360deg);
+            -ms-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+        }
+    }
+
+    #stage{
+        margin: 1em auto;
+        -moz-perspective: 1200px;
+        -ms-perspective: 1200px;
+        perspective:1200px;
+    }
+   
+    #spinner{
+        animation: spinner 5s linear infinite;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+    </style>
+    <title>3DAnimation</title>
+  </head>  
+ 
+  <body>
+    <div id="stage" style="background: rgba(0,0,0,0.5);">
+        <p id="spinner" style="background: rgba(0,0,0,0.5); text-align:center; color:#fff;">Quite dizzying</p>
+    </div>
+  </body>
+</html>
